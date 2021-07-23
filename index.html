@@ -1,5 +1,5 @@
 try { parent.postMessage("alert('xss via postMessage')",'*') } catch {}
-try { onmessage = e => eval(e.data) }
+try { onmessage = e => eval(e.data) } catch {}
 try { alert('xss') } catch {}
 try { parent.alert('parent.xss') } catch {}
 // <script> try { parent.postMessage("alert('xss via postMessage')",'*') } catch {} </script>
