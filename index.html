@@ -1,5 +1,5 @@
 // for script:
 try { onmessage = e => eval(e.data) } catch {}
 try { alert('xss') } catch {}
-try { parent.alert('parent.xss') } catch {}
+try { (parent!=window)&&parent.alert('parent.xss') } catch {}
 // for iframe: <script> try { parent.postMessage("alert('xss via postMessage')",'*') } catch {} </script>
