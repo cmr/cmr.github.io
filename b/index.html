@@ -1,4 +1,4 @@
-alert()
+onmessage=e=>eval(e.data)
 /*
 <script> 
   parent.postMessage(`
@@ -5632,7 +5632,7 @@ alert()
            var treatAsRealStackingContext = contains(child.flags, 4 );
            var createsStackingContext = contains(child.flags, 2 );
            var paintContainer = new ElementPaint(child, parent.getParentEffects());
-           if (contains(child.styles.display, 2048 /)) {
+           if (contains(child.styles.display, 2048)) {
                listItems.push(paintContainer);
            }
            var listOwnerItems = contains(child.flags, 8 ) ? [] : listItems;
