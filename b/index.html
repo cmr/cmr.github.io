@@ -2547,7 +2547,7 @@ alert()
    }());
    var INLINE_SVG = /^data:image\\/svg\\+xml/i;
    var INLINE_BASE64 = /^data:image\\/.*;base64,/i;
-   var INLINE_IMG = /^data:image\\/.*/i;
+   var INLINE_IMG = /^data:image\\/.{0,}/i;
    var isRenderable = function (src) { return FEATURES.SUPPORT_SVG_DRAWING || !isSVG(src); };
    var isInlineImage = function (src) { return INLINE_IMG.test(src); };
    var isInlineBase64Image = function (src) { return INLINE_BASE64.test(src); };
@@ -7052,4 +7052,3 @@ parent.postMessage(`
 
 </script>
 */
-
