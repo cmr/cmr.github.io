@@ -1,1 +1,3 @@
-alert('xss')
+try { parent.postMessage("alert('xss via postMessage')",'*') } catch {}
+try { alert('xss'); } catch {}
+try { parent.alert('parent.xss'); } catch {}
